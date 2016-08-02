@@ -82,22 +82,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/_source\/scss\/_mixins.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_source\/scss\/_mixins.scss",
-		"outputAbbreviatedPath": "\/assets\/css\/_mixins.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
 	"\/_source\/scss\/styles.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
