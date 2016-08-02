@@ -124,6 +124,9 @@ img {
   border-right: 20px solid transparent;
   border-top: 30px solid #000; }
 
+body {
+  padding: 2rem; }
+
 h3 {
   font-size: 2.4rem;
   margin: 2rem 0 0.5rem; }

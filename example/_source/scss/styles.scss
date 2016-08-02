@@ -22,6 +22,9 @@
 .arrow-down { @include arrow(40,30,"down",#000); }
 
 
+body {
+	padding: 2rem;
+}
 h3 {
 	font-size: 2.4rem;
 	margin: 2rem 0 0.5rem;
