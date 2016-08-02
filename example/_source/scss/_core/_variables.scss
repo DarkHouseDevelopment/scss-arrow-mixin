@@ -1,0 +1,38 @@
+/************************************************************************/
+/* VARIABLES
+/************************************************************************/
+
+$black     		: rgb(20,20,20);
+$darkgrey  		: rgb(51, 51, 51);
+$grey      		: rgb(153, 153, 153);
+$lightgrey 		: rgb(204,204,204);
+$white     		: rgb(255,255,255);
+
+// Site Colors
+
+$blue    		: rgb(0,180,188);
+$msggreen   	: rgb(60,150,10); // Used for Success Messages
+$msgred     	: rgb(225,0,0); // Used for Error Messages
+$bgcolor 		: $white;
+
+// Typography
+
+$textcolor      	: $black;
+$basefont       	: Helvetica, Arial, sans-serif;
+$basefontsize   	: 1.6rem;
+$basefontweight 	: 400;
+$baselineheight 	: 1.2;
+$baseline       	: $baselineheight;
+
+$headingfont  		: Helvetica, Arial, sans-serif;
+$headingcolor 		: $black;
+
+
+// Links
+
+$linkcolor   	: $blue;
+$linkhover   	: lighten($blue, 0.25);
+
+// Elements
+
+$inputborder 	: 1px solid $grey;

@@ -1,0 +1,13 @@
+/************************************************************************/
+/* GRID VARIABLES
+/************************************************************************/
+
+$container 	: 1140;
+$columns	: 12;
+
+$mobilels   : 504px;
+$tablet     : 680px;
+$tabletls   : 856px;
+$desktop    : 1032px;
+$calc		: round(($container / 9) * 10);
+$widescreen : unquote($calc + 'px'); // NEVERMORE

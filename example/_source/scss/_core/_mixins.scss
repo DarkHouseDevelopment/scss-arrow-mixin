@@ -1,0 +1,67 @@
+/************************************************************************/
+/* MIXINS
+/************************************************************************/
+
+// CLEARFIX
+@mixin clearfix {
+	*zoom : 1;
+	&:before, &:after {
+		display: table;
+		content : "";
+	}
+	&:after { clear : both; }
+}
+.clearfix { @include clearfix; }
+
+
+// WRAP
+@mixin wrap{
+	//@include container(show-columns);
+	@include container();
+	
+	@include susy-breakpoint($widescreen,$susy2){
+		//@include container($susy2 show-columns);
+		@include container($susy2);
+	}
+}
+.wrap{ @include wrap; }
+
+
+// ARROW MIXIN
+$arrows: (
+	'left' 'right' 'topbottom',
+	'right' 'left' 'topbottom',
+	'up' 'bottom' 'leftright',
+	'down' 'top' 'leftright',
+);
+
+@mixin arrow($width,$height,$direction,$color) {
+	display: inline-block;
+	width: 0; 
+	height: 0;
+	$border_direction: "";
+	$other_borders: "";
+	$border_width: $width / 2;
+	$border_height: $height / 2;
+	
+	@each $i in $arrows{
+		$dir: nth($i,1);
+		$b_dir: nth($i,2);
+		$o_bor: nth($i,3);
+		
+		@if $direction == $dir {
+			$border_direction: $b_dir;
+			$other_borders: $o_bor;
+		}
+	};
+	
+	@if $other_borders == "topbottom" {
+		border-top: #{$border_height}px solid transparent;
+		border-bottom: #{$border_height}px solid transparent;
+		border-#{$border_direction}: #{$width}px solid $color;
+	}@else if $other_borders == "leftright" {
+		border-left: #{$border_width}px solid transparent;
+		border-right: #{$border_width}px solid transparent;
+		border-#{$border_direction}: #{$height}px solid $color;
+	}
+}

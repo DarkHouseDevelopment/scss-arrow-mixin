@@ -1,0 +1,28 @@
+/************************************************************************/
+/* STYLES
+/************************************************************************/
+/************************************************************************/
+/* BASE
+/************************************************************************/
+
+@import "compass";
+@import "breakpoint";
+@import "susy";
+@import "_core/variables";
+@import "_grid/grid_variables";
+@import "_grid/grid_setup";
+@import "_core/base";
+@import "_core/mixins";
+
+
+// Arrow Mixin example @include triangle($width,$height,$direction,$color);
+.arrow-left { @include arrow(30,30,"left",#F00); }
+.arrow-right { @include arrow(30,30,"right",#0F0); }
+.arrow-up { @include arrow(40,30,"up",#00F); }
+.arrow-down { @include arrow(40,30,"down",#000); }
+
+
+h3 {
+	font-size: 2.4rem;
+	margin: 2rem 0 0.5rem;
+}

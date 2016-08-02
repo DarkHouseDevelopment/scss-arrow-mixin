@@ -1,0 +1,129 @@
+/************************************************************************/
+/* STYLES
+/************************************************************************/
+/************************************************************************/
+/* BASE
+/************************************************************************/
+/*// A debug tool for checking browser support
+@mixin debug-support-matrix($experimental: true, $ie: true) {
+  @debug  $moz-$experimental-support-for-mozilla
+          $webkit-$experimental-support-for-webkit
+          $opera-$experimental-support-for-opera
+          $microsoft-$experimental-support-for-microsoft
+          $khtml-$experimental-support-for-khtml;
+  @debug  $ie6-$legacy-support-for-ie6
+          $ie7-$legacy-support-for-ie7
+          $ie8-$legacy-support-for-ie8;
+}*/
+/*// A debug tool for checking browser support
+@mixin debug-support-matrix($experimental: true, $ie: true) {
+  @debug  $moz-$experimental-support-for-mozilla
+          $webkit-$experimental-support-for-webkit
+          $opera-$experimental-support-for-opera
+          $microsoft-$experimental-support-for-microsoft
+          $khtml-$experimental-support-for-khtml;
+  @debug  $ie6-$legacy-support-for-ie6
+          $ie7-$legacy-support-for-ie7
+          $ie8-$legacy-support-for-ie8;
+}*/
+/************************************************************************/
+/* VARIABLES
+/************************************************************************/
+/************************************************************************/
+/* GRID VARIABLES
+/************************************************************************/
+/************************************************************************/
+/* GRID SETUP
+/************************************************************************/
+/************************************************************************/
+/* HTML/BODY
+/************************************************************************/
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: white;
+  -webkit-text-size-adjust: 100%;
+  font-size: 10px; }
+
+body {
+  background: white;
+  color: #141414;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.2; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic; }
+
+/************************************************************************/
+/* MIXINS
+/************************************************************************/
+.clearfix {
+  *zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    display: table;
+    content: ""; }
+  .clearfix:after {
+    clear: both; }
+
+.wrap {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrap:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  @media (min-width: 1267px) {
+    .wrap {
+      max-width: 1140px;
+      margin-left: auto;
+      margin-right: auto; }
+      .wrap:after {
+        content: " ";
+        display: block;
+        clear: both; } }
+
+.arrow-left {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 30px solid #F00; }
+
+.arrow-right {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 30px solid #0F0; }
+
+.arrow-up {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid #00F; }
+
+.arrow-down {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 30px solid #000; }
+
+h3 {
+  font-size: 2.4rem;
+  margin: 2rem 0 0.5rem; }

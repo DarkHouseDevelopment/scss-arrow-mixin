@@ -1,0 +1,17 @@
+/************************************************************************/
+/* GRID SETUP
+/************************************************************************/
+
+$susy: (
+	container: 90%,
+	columns: $columns,
+	gutters: 1/4,
+	global-box-sizing: border-box,
+	gutter-position: after
+);
+
+$susy2: (
+	container: unquote($container + 'px')
+);
+
+$breakpoint-to-ems: true;
