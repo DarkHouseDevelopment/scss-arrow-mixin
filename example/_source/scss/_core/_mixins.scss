@@ -53,7 +53,7 @@ $arrows: (
 			$border_direction: $b_dir;
 			$other_borders: $o_bor;
 		}
-	};
+	}; 
 	
 	@if $other_borders == "topbottom" {
 		border-top: #{$border_height}px solid transparent;
